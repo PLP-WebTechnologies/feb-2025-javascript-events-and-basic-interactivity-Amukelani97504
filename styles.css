@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.hover-box {
+    padding: 20px;
+    margin: 20px auto;
+    width: 200px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.hover-box:hover {
+    transform: scale(1.1);
+    background-color: #f0f8ff;
+}
+
+.slideshow img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.slideshow img:hover {
+    transform: scale(1.05);
+}
+
+#password-progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#password-progress {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

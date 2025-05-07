@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <h1 id="greeting">Welcome!</h1>
+
+    <button id="click-btn">Click Me!</button>
+    <div id="hover-element" class="hover-box">Hover over me!</div>
+
+    <div class="slideshow">
+        <img id="slideshow-img" src="project1.jpg" alt="project1"/>
+        <button id="next-btn">Next</button>
+    </div>
+    
+    <button class="tab-button" data-tab="1">About Us</button>
+    <button class="tab-button" data-tab="2">Contact</button>
+    <div class="tab-content" id="tab-1">We are a team of passionate developers creating interactive web experiences.</div>
+    <div class="tab-content" id="tab-2">Feel free to reach out to us at amukelani@ngo.com or call us at +123456789.</div>
+
+    <form id="form">
+        <input type="text" id="username" placeholder="Enter your username" required />
+        <div id="username-feedback"></div>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <input type="password" id="password" placeholder="Enter your password" required />
+        <div id="password-progress-container">
+            <div id="password-progress"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>    
+</html>
